@@ -9,6 +9,14 @@ const WordContainer = ({guess}: {guess: string}): JSX.Element => {
       <div key={i} className="box"></div>
     )
   }
+  
+  if (guess) {
+    for (let i = 0; i < 5; i++) {
+      boxes[i] = (
+        <div key={i} className="box filled">{guess[i]}</div>
+      )
+    }
+  }
 
   return (
     <div className="word-container">

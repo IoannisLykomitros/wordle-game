@@ -32,3 +32,50 @@ main {
   text-transform: uppercase;
 }
 
+.box-filled {
+  border: none;
+  color: #ffffff;
+}
+
+.keyboard {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.keyboard-row {
+  display: flex;
+  gap: 0.3rem;
+  justify-content: center;
+}
+
+.key {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.2rem;
+  width: 42px;
+  height: 58px;
+  border: none;
+  border-radius: 4px;
+  background-color: #818384;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.key.special-key {
+  width: 64px;
+}
+
+.key.enter-key {
+  width: 64px;
+  font-size: 1rem;
+}
+
+.key.delete-key {
+  width: 64px;
+  font-size: 1.2rem;
+}
